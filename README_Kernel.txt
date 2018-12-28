@@ -11,8 +11,8 @@ Ex)   export PATH=$PATH:$(android platform directory you download)/prebuilts/gcc
 Ex)   export CROSS_COMPILE=aarch64-linux-android-
 
 $ mkdir ../out
-$ make ARCH=arm64 O=../out merge_hi6250_defconfig
-$ make ARCH=arm64 O=../out -j8
+$ make ARCH=arm64 O=../kernel-out merge_hi6250_defconfig
+$ make ARCH=arm64 O=../kernel-out -j8
 
 2. Output files
 - Kernel : out/arch/arm64/boot/Image.gz
